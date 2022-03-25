@@ -4,15 +4,15 @@ li {
 }
 
 .header {
-    margin: 0px auto;
-    max-width: 1170px;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
 
 .header__container {
     display: flex;
+    max-width: 1170px;
     min-height: 102px;
+    margin: 0 auto;
     align-items: center;
 }
 
@@ -40,11 +40,9 @@ li {
     margin-right: 76px;
     text-decoration: none;
     color: #333;
-    border: 1px solid;
-    border-radius: 0;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
     padding: 3.89px 16px 3.89px 14px;
-    border-left-color: transparent;
-    border-right-color: transparent;
 }
 
 .menu__link_gallery {
@@ -70,3 +68,5 @@ li {
     text-decoration: none;
     color: #333;
 }
+
+/* adaptation */
