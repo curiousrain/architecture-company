@@ -12,12 +12,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* logo
+/* .header__container_logo
 1/ ширина
 2/ высота
 3/ внешний отступ сверху
 */
-
 
 
 /* .header
@@ -50,6 +49,8 @@ body {
     justify-content: flex-end;
 }
 
+/* меню бургер для @media screen and (min-width:481px) and (max-width:768px) {} */
+
 .burger {
     width: 40px;
     height: 40px;
@@ -60,11 +61,9 @@ body {
     height: 3px;
     margin-bottom: 5px;
     background-color: #333;
-
 }
 
-
-/* 
+/* меню
 1/ делаю блочный флекс-контейнер и преобразовываю все элементы во флекс-элементы.
 2/ убираю ввнешние отступы / margin по умолчанию
 3/ убираю внутренние отступы / padding по умолчанию
