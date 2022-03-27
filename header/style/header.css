@@ -202,6 +202,9 @@ body {
         flex-direction: column;
         padding-top: 15px;
         justify-content: center;
+        align-items: center;
     }
 
-    .header__container_logo {}
+    .header__container_logo {
+        width: 60px;
+}
