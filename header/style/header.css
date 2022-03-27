@@ -99,7 +99,6 @@ body {
     margin-top: 2.793125em;
     margin-right: 2.875em;
     margin-bottom: 2.85375em;
-    margin-left: 21.5em;
     text-decoration: none;
     color: #333;
     border-bottom: 0.0625em solid #333;
@@ -170,30 +169,30 @@ body {
     }
 }
 
-/* скорректировать */
-
 @media screen and (min-width:769px) and (max-width:1279px) {
     .header {
         font-size: 0.875em;
     }
 
     .header__container {
+        display: flex;
         max-width: 100%;
-        height: 112px;
+        height: 100%;
         padding-left: 15px;
         padding-right: 15px;
-        display: flex;
+        justify-content: space-between;
     }
 
     .header__container_logo {
         width: 80px;
         height: 53.71px;
         margin-top: 29.14px;
-        align-items: center;
+        margin-right: 35px;
+
     }
 }
 
-/* скорректировать */
+/* скорректировать выпадающее с бургером */
 
 @media screen and (min-width:481px) and (max-width:768px) {
     .header {
