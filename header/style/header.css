@@ -1,0 +1,208 @@
+/* обнуляю паддинги и марджены у всех элементов */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* настройки стилей тела */
+
+body {
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* logo
+1/ ширина
+2/ высота
+3/ внешний отступ сверху
+*/
+
+
+
+/* .header
+1/ максимальная ширина окна браузера - 1920px
+2/ ставлю блок по центру (даже если ширина окна браузера станет еще больше)
+3/ размер шрифта
+4/ выравниваю по центру
+*/
+
+
+
+/* .header__container
+1/ максимальная ширина контейнера - 1170px
+2/ высота контейнера - 102px
+3/ ставлю блок по центру
+4/ делаю контейнер гибким (flexbox)
+5/ располагаю флекс-элементы равномерно по главной оси
+
+!!! Если меняю px на относительные величины em/% - максимальная штирина контенера слетает в меньшую сторону !!! 
+*/
+
+
+/* ul
+1/ делаю элемент гибким
+2/ ставлю контент в конец контенера
+*/
+
+.header__menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.burger {
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+.burger__line {
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: #333;
+
+}
+
+
+/* 
+1/ делаю блочный флекс-контейнер и преобразовываю все элементы во флекс-элементы.
+2/ убираю ввнешние отступы / margin по умолчанию
+3/ убираю внутренние отступы / padding по умолчанию
+4/ убираю маркеры / точки у тега ul
+5/ делаю названия разделов / ссылок заглавными буквами
+6/ задаю расстояние между буквами разделов / ссылок
+7/ выравниваю элементы по центру
+*/
+
+.menu__item {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    align-items: center;
+}
+
+/* ссылки / menu items 
+1/ делаю элемент блочным
+2/ задаю внешние отступы / margin (по макету у всех они разные) 
+Сверху | Справа | Снизу | Слева
+3/ убираю подчеркивание ссылок
+4/ задаю цвет из макета
+5/ для main задала полосы сверху и снизу
+
+для main задавать внутренний отступ / padding в 30px, т.к. в макете рамка сдвинута вправо?
+!!! спросить у Иры верно или убрать !!! такой же вопрос по неточностям в других разделах !
+*/
+
+.menu__item_main {
+    display: block;
+    margin-top: 2.793125em;
+    margin-right: 2.875em;
+    margin-bottom: 2.85375em;
+    margin-left: 21.5em;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 0.0625em solid #333;
+    border-top: 0.0625em solid #333;
+    padding: 0.243125em 1em 0.243125em 0.875em;
+}
+
+.menu__item_gallery {
+    display: block;
+    margin-top: 2.793125em;
+    margin-right: 3.8125em;
+    margin-bottom: 2.831875em;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu__item_projects {
+    display: block;
+    margin-top: 2.8125em;
+    margin-right: 3.4375em;
+    margin-bottom: 2.875em;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu__item_certifications {
+    display: block;
+    margin-top: 2.8125em;
+    margin-right: 3.0625em;
+    margin-bottom: 2.875em;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu__item_contacts {
+    display: block;
+    margin-top: 2.793125em;
+    margin-right: 8.375em;
+    margin-bottom: 2.85375em;
+    text-decoration: none;
+    color: #333;
+}
+
+/* адаптация через медиазапросы 
+уточнить у девочек на счет min-width 1200px вместо 1024px, чтобы контейнер оставался 1170px с отступами в 15px
+*/
+
+@media screen and (min-width:1280px) {
+    .header {
+        max-width: 1920px;
+        margin: 0 auto;
+        font-size: 0.75em;
+    }
+
+    .header__container {
+        max-width: 1170px;
+        height: 102px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header__container_logo {
+        width: 70px;
+        height: 43.71px;
+        margin-top: 29.14px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1279px) {
+    .header {
+        font-size: 0.875em;
+    }
+
+    .header__container {
+        max-width: 100%;
+        height: 112px;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+    }
+
+    .header__container_logo {
+        width: 80px;
+        height: 53.71px;
+        margin-top: 29.14px;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .header {
+        font-size: 0.75em;
+    }
+
+    .header__container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 15px;
+        justify-content: center;
+    }
+
+    .header__container_logo {}
