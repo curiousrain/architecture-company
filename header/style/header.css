@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E5E5E5;
+}
+
+/* бургер-меню */
+
+.burger {
+    display: none;
+    width: 40px;
+    height: 40px;
+}
+
+.burger__line {
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: #333;
+}
+
+/* ссылки / menu items */
+
+.menu__item_main {
+    display: block;
+    margin-top: 2.80em;
+    margin-right: 2.90em;
+    margin-bottom: 2.90em;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 0.06em solid #333;
+    border-top: 0.06em solid #333;
+    padding: 0.25em 1em 0.25em 0.90em;
+}
+
+.menu__item_gallery {
+    display: block;
+    margin-top: 2.80em;
+    margin-right: 3.90em;
+    margin-bottom: 2.90em;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu__item_projects {
+    display: block;
+    margin-top: 2.90em;
+    margin-right: 3.50em;
+    margin-bottom: 2.90em;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu__item_certifications {
+    display: block;
+    margin-top: 2.90em;
+    margin-right: 3.07em;
+    margin-bottom: 2.90em;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu__item_contacts {
+    display: block;
+    margin-top: 2.80em;
+    margin-right: 8.40em;
+    margin-bottom: 2.90em;
+    text-decoration: none;
+    color: #333;
+}
+
+/* адаптация через медиа-запросы */
+
+@media screen and (min-width:1280px) {
+    .header {
+        max-width: 1920px;
+        margin: 0 auto;
+        font-size: 0.75em;
+    }
+
+    .header__container {
+        display: flex;
+        max-width: 1170px;
+        height: 102px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__container_logo {
+        width: 70px;
+        height: 43.71px;
+    }
+
+    .header__menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu__item {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        align-items: center;
+    }
+
+    .burger {
+        display: none;
+        width: 30px;
+        height: 40px;
+    }
+
+    .burger__line {
+        height: 3px;
+        margin-bottom: 4px;
+        background-color: #333;
+    }
+
+    .menu__item_main {
+        display: block;
+        margin-top: 2.80em;
+        margin-right: 2.90em;
+        margin-bottom: 2.90em;
+        text-decoration: none;
+        color: #333;
+        border-bottom: 0.06em solid #333;
+        border-top: 0.06em solid #333;
+        padding: 0.25em 1em 0.25em 0.90em;
+    }
+
+    .menu__item_gallery {
+        display: block;
+        margin-top: 2.80em;
+        margin-right: 3.90em;
+        margin-bottom: 2.90em;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .menu__item_projects {
+        display: block;
+        margin-top: 2.90em;
+        margin-right: 3.50em;
+        margin-bottom: 2.90em;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .menu__item_certifications {
+        display: block;
+        margin-top: 2.90em;
+        margin-right: 3.07em;
+        margin-bottom: 2.90em;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .menu__item_contacts {
+        display: block;
+        margin-top: 2.80em;
+        margin-right: 8.40em;
+        margin-bottom: 2.90em;
+        text-decoration: none;
+        color: #333;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1279px) {
+    .header {
+        font-size: 0.875em;
+    }
+
+    .header__container {
+        display: flex;
+        max-width: 100%;
+        height: 100%;
+        padding-left: 25px;
+        padding-right: 15px;
+        justify-content: space-between;
+    }
+
+    .header__container_logo {
+        width: 80px;
+        height: 53.71px;
+        margin-top: 29.14px;
+        margin-right: 35px;
+    }
+
+    .header__menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu__item {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        align-items: center;
+    }
+
+    .burger {
+        display: none;
+        width: 30px;
+        height: 40px;
+    }
+
+    .burger__line {
+        height: 3px;
+        margin-bottom: 4px;
+        background-color: #333;
+    }
+
+    .menu__item_main {
+        display: block;
+        margin-top: 2.80em;
+        margin-right: 2.90em;
+        margin-bottom: 2.90em;
+        text-decoration: none;
+        color: #333;
+        border-bottom: 0.06em solid #333;
+        border-top: 0.06em solid #333;
+        padding: 0.25em 1em 0.25em 0.90em;
+    }
+
+    .menu__item_gallery {
+        display: block;
+        margin-top: 2.80em;
+        margin-right: 3.90em;
+        margin-bottom: 2.90em;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .menu__item_projects {
+        display: block;
+        margin-top: 2.90em;
+        margin-right: 3.50em;
+        margin-bottom: 2.90em;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .menu__item_certifications {
+        display: block;
+        margin-top: 2.90em;
+        margin-right: 3.07em;
+        margin-bottom: 2.90em;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .menu__item_contacts {
+        display: block;
+        margin-top: 2.80em;
+        margin-right: 8.40em;
+        margin-bottom: 2.90em;
+        text-decoration: none;
+        color: #333;
+    }
+}
+
+/* скорректировать выпадающее меню с бургером */
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .header {
+        font-size: 0.75em;
+    }
+
+    .header__container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 15px;
+        align-items: center;
+    }
+
+    .header__container_logo {
+        width: 70px;
+    }
+
+    .header__menu {
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header__menu:hover .burger {
+        display: none;
+    }
+
+    .header__menu:hover .menu__item_main {
+        display: block;
+    }
+
+    .header__menu:hover .menu__item_gallery {
+        display: block;
+    }
+
+
+    .header__menu:hover .menu__item_projects {
+        display: block;
+    }
+
+
+    .header__menu:hover .menu__item_certifications {
+        display: block;
+    }
+
+
+    .header__menu:hover .menu__item_contacts {
+        display: block;
+    }
+
+    .menu__item {
+        display: block;
+        list-style: none;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+    }
+
+    .burger {
+        display: inline-block;
+        width: 30px;
+        height: 40px;
+        padding-top: 20px;
+    }
+
+    .burger__line {
+        height: 3px;
+        margin-bottom: 4px;
+        background-color: #333;
+    }
+
+    .menu__item_main {
+        display: none;
+        color: #333;
+    }
+
+    .menu__item_gallery {
+        display: none;
+        color: #333;
+    }
+
+    .menu__item_projects {
+        display: none;
+        color: #333;
+    }
+
+    .menu__item_certifications {
+        display: none;
+        color: #333;
+    }
+
+    .menu__item_contacts {
+        display: none;
+        color: #333;
+    }
+}
