@@ -11,6 +11,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.body__container {
+    width: 80vw;
+    margin: 0 auto;
+}
+
 /* .header__container_logo
 1/ ширина
 2/ высота
@@ -142,6 +147,231 @@ body {
 .main {
     font-family: 'Roboto', sans-serif;
     margin: auto;
+}
+
+.project-lorum {
+    display: flex;
+    width: 80vw;
+}
+
+.project-lorum__text {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10%;
+    padding-top: 25%;
+}
+
+.project-lorum__title {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 9.6vh;
+    color: #BDBDBD;
+    text-transform: uppercase;
+}
+
+.project-lorum__subtitle {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 9.6vh;
+    color: #333333;
+}
+
+.project-lorum__btn {
+    display: flex;
+    padding-top: 20%;
+}
+
+.project-lorum__btn-item {
+    border: 1px solid #F9F9F9;
+    font-size: 1.5em;
+    height: 2.2em;
+    width: 2.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-right: 5%;
+    color: #000000;
+}
+
+.project-lorum__counter {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: #BDBDBD;
+    margin-top: 15%;
+    word-spacing: 1em;
+}
+
+a:hover {
+    background-color: #F2F2F2;
+}
+
+.project-lorum__img {
+    position: relative;
+}
+
+#img-building {
+    max-height: 100%;
+}
+
+#img-button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 30%;
+    margin-left: -1px;
+}
+
+.about {
+    display: flex;
+    background-color: #FBFBFB;
+    padding-left: 10%;
+    padding-top: 3%;
+    margin-top: 12%;
+}
+
+.title {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 64px;
+    color: #BDBDBD;
+}
+
+.about__subtitle {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.6em;
+    color: #000000;
+    padding-top: 2%;
+}
+
+.about__pictures {
+    display: grid;
+    grid-template-areas:
+        "pict1 pict2"
+        "pict3 pict2";
+    column-gap: 4%;
+    row-gap: 5%;
+    align-items: center;
+}
+
+.about__pict-1 {
+    grid-area: pict1;
+}
+
+.about__pict-2 {
+    grid-area: pict2;
+}
+
+.about__pict-3 {
+    grid-area: pict3;
+}
+
+.about__text {
+    padding-left: 5%;
+    padding-right: 7%;
+}
+
+.about__btn {
+    padding-top: 9%;
+}
+
+.main-focus__number {
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 12.5em;
+    color: #F2F2F2;
+    padding-right: 3%;
+}
+
+.main-focus__text {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.38em;
+    line-height: 1.8em;
+    color: #333333;
+}
+
+.main-focus__item {
+    display: flex;
+    align-items: center;
+}
+
+.main-focus__row {
+    display: grid;
+    grid-template-columns: 37% 1fr;
+    column-gap: 18%;
+}
+
+.main-focus {
+    margin-top: 11%;
+    margin-bottom: 12%;
+}
+
+.contact__foma-text {
+    background-color: #F3F3F3;
+    border: none;
+    height: 90%;
+    padding-left: 20px;
+}
+
+.contact {
+    display: grid;
+    grid-column: 1/12;
+    grid-row: 1/4;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 20px;
+    column-gap: 30px;
+    margin-top: 12%;
+}
+
+.contact__title {
+    grid-column: 1/12;
+}
+
+.contact__forma {
+    display: grid;
+    grid-column: 1/5;
+    grid-row: 2/4;
+    row-gap: 10px;
+    height: 100%;
+}
+
+::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 60px;
+    letter-spacing: 0.04em;
+}
+
+.contact__img {
+    grid-column: 5/12;
+    grid-row: 2/4;
+}
+
+.contact__button {
+    margin-top: 77px;
+    display: flex;
+}
+
+.contact__send {
+    border: 1px solid black;
+    background-color: #333333;
+    padding: 26px 39px;
+    display: flex;
+    margin-left: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    justify-content: center;
+    width: 180px;
 }
 
 .project {
@@ -291,240 +521,9 @@ body {
     .main {
         max-width: 1170px;
     }
-
-    .project-lorum {
-        display: flex;
-        width: 80vw;
-    }
-
-    .project-lorum__text {
-        display: flex;
-        flex-direction: column;
-        padding-right: 10%;
-        padding-top: 25%;
-    }
-
-    .project-lorum__title {
-        font-family: 'Roboto';
-        font-weight: 300;
-        font-size: 9.6vh;
-        color: #BDBDBD;
-        text-transform: uppercase;
-    }
-
-    .project-lorum__subtitle {
-        font-family: 'Roboto';
-        font-weight: 700;
-        font-size: 9.6vh;
-        color: #333333;
-    }
-
-    .project-lorum__btn {
-        display: flex;
-        padding-top: 20%;
-    }
-
-    .project-lorum__btn-item {
-        border: 1px solid #F9F9F9;
-        font-size: 1.5em;
-        height: 2.2em;
-        width: 2.2em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        margin-right: 5%;
-        color: #000000;
-    }
-
-    .project-lorum__counter {
-        font-family: 'Roboto';
-        font-weight: 400;
-        font-size: 1.5em;
-        line-height: 1.5em;
-        color: #BDBDBD;
-        margin-top: 15%;
-        word-spacing: 1em;
-    }
-
-    a:hover {
-        background-color: #F2F2F2;
-    }
-
-    .project-lorum__img {
-        position: relative;
-    }
-
-    #img-building {
-        max-height: 100%;
-    }
-
-    #img-button {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        max-width: 30%;
-        margin-left: -1px;
-    }
-
-    .about {
-        display: flex;
-        background-color: #FBFBFB;
-        padding-left: 10%;
-        padding-top: 3%;
-        margin-top: 12%;
-    }
-
-    .title {
-        font-family: 'Roboto';
-        font-weight: 300;
-        font-size: 64px;
-        color: #BDBDBD;
-    }
-
-    .about__subtitle {
-        font-family: 'Roboto';
-        font-weight: 300;
-        font-size: 1em;
-        line-height: 1.6em;
-        color: #000000;
-        padding-top: 2%;
-    }
-
-    .about__pictures {
-        display: grid;
-        grid-template-areas:
-            "pict1 pict2"
-            "pict3 pict2";
-        column-gap: 4%;
-        row-gap: 5%;
-        align-items: center;
-    }
-
-    .about__pict-1 {
-        grid-area: pict1;
-    }
-
-    .about__pict-2 {
-        grid-area: pict2;
-    }
-
-    .about__pict-3 {
-        grid-area: pict3;
-    }
-
-    .about__text {
-        padding-left: 5%;
-        padding-right: 7%;
-    }
-
-    .about__btn {
-        padding-top: 9%;
-    }
-
-    .main-focus__number {
-        font-family: 'Roboto';
-        font-weight: 900;
-        font-size: 12.5em;
-        color: #F2F2F2;
-        padding-right: 3%;
-    }
-
-    .main-focus__text {
-        font-family: 'Roboto';
-        font-weight: 400;
-        font-size: 1.38em;
-        line-height: 1.8em;
-        color: #333333;
-    }
-
-    .main-focus__item {
-        display: flex;
-        align-items: center;
-    }
-
-    .main-focus__row {
-        display: grid;
-        grid-template-columns: 37% 1fr;
-        column-gap: 18%;
-    }
-
-    .main-focus {
-        margin-top: 11%;
-        margin-bottom: 12%;
-    }
-
-    .contact__foma-text {
-        background-color: #F3F3F3;
-        border: none;
-        height: 90%;
-        padding-left: 20px;
-    }
-
-
-    .contact {
-        display: grid;
-        grid-column: 1/12;
-        grid-row: 1/4;
-        grid-template-columns: repeat(12, 1fr);
-        row-gap: 20px;
-        column-gap: 30px;
-        margin-top: 12%;
-    }
-
-    .contact__title {
-        grid-column: 1/12;
-    }
-
-    .contact__forma {
-        display: grid;
-        grid-column: 1/5;
-        grid-row: 2/4;
-        row-gap: 10px;
-        height: 100%;
-    }
-
-    ::placeholder {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 60px;
-        letter-spacing: 0.04em;
-    }
-
-    .contact__img {
-        grid-column: 5/12;
-        grid-row: 2/4;
-    }
-
-    .contact__button {
-        margin-top: 77px;
-        display: flex;
-    }
-
-    .contact__send {
-        border: 1px solid black;
-        background-color: #333333;
-        padding: 26px 39px;
-        display: flex;
-        margin-left: 0;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 12px;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        justify-content: center;
-        width: 180px;
-    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    body {
-        width: 90vw;
-        margin: 0 auto;
-    }
-
     .header {
         font-size: 0.875em;
     }
@@ -543,7 +542,6 @@ body {
         height: 53.71px;
         margin-top: 29.14px;
         margin-right: 35px;
-
     }
 
     .project-lorum {
@@ -552,98 +550,16 @@ body {
         height: 100vh;
     }
 
-    .project-lorum__text {
-        display: flex;
-        flex-direction: column;
-        padding-right: 10%;
-        padding-top: 25%;
-    }
-
-    .project-lorum__title {
-        font-family: 'Roboto';
-        font-weight: 300;
-        font-size: 9.6vh;
-        color: #BDBDBD;
-        text-transform: uppercase;
-    }
-
-    .project-lorum__subtitle {
-        font-family: 'Roboto';
-        font-weight: 700;
-        font-size: 9.6vh;
-        color: #333333;
-    }
-
-    .project-lorum__btn {
-        display: flex;
-        padding-top: 20%;
-    }
-
-    .project-lorum__btn-item {
-        border: 1px solid #F9F9F9;
-        font-size: 1.5em;
-        height: 2.2em;
-        width: 2.2em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        margin-right: 5%;
-        color: #000000;
-    }
-
-    .project-lorum__counter {
-        font-family: 'Roboto';
-        font-weight: 400;
-        font-size: 1.5em;
-        line-height: 1.5em;
-        color: #BDBDBD;
-        margin-top: 15%;
-        word-spacing: 1em;
-    }
-
-    a:hover {
-        background-color: #F2F2F2;
-    }
-
-    .project-lorum__img {
-        position: relative;
-    }
 
     #img-building {
-        max-height: 95%;
-    }
-
-    #img-button {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        max-width: 30%;
-        margin-left: -1px;
+        max-height: 100%;
     }
 
     .about {
         display: flex;
-        background-color: #FBFBFB;
         padding-left: 2%;
         padding-top: 2%;
         margin-top: 5%;
-    }
-
-    .title {
-        font-family: 'Roboto';
-        font-weight: 300;
-        font-size: 9.6vh;
-        color: #BDBDBD;
-    }
-
-    .about__subtitle {
-        font-family: 'Roboto';
-        font-weight: 300;
-        font-size: 1em;
-        line-height: 1.6em;
-        color: #000000;
-        padding-top: 20px;
     }
 
     .about__pictures {
@@ -656,20 +572,8 @@ body {
         row-gap: 1rem;
     }
 
-    .about__pict-1 {
-        grid-area: pict1;
-    }
-
     #img {
         width: 90%;
-    }
-
-    .about__pict-2 {
-        grid-area: pict2;
-    }
-
-    .about__pict-3 {
-        grid-area: pict3;
     }
 
     .about__text {
@@ -681,35 +585,17 @@ body {
         padding-top: 5%;
     }
 
-    .main-focus__number {
-        font-family: 'Roboto';
-        font-weight: 900;
-        font-size: 12.5em;
-        color: #F2F2F2;
-        padding-right: 3%;
-    }
-
     .main-focus__text {
-        font-family: 'Roboto';
-        font-weight: 400;
         font-size: 0.9em;
         line-height: 2em;
-        color: #333333;
-    }
-
-    .main-focus__item {
-        display: flex;
-        align-items: center;
     }
 
     .main-focus__row {
-        display: grid;
-        grid-template-columns: 37% 1fr;
-        column-gap: 15%;
+        column-gap: 10%;
     }
 
     .main-focus {
-        margin-top: 12%;
+        margin-top: 10%;
     }
 
     .main {
@@ -791,13 +677,6 @@ body {
         line-height: 1em;
     }
 
-    .contact__foma-text {
-        background-color: #F3F3F3;
-        border: none;
-        height: 90%;
-        padding-left: 20px;
-    }
-
     .contact {
         display: grid;
         grid-column: 1/12;
@@ -805,7 +684,7 @@ body {
         grid-template-columns: repeat(12, 1fr);
         row-gap: 20px;
         column-gap: 30px;
-        margin-top: 12%;
+        margin-top: 10%;
     }
 
     .contact__title {
@@ -818,15 +697,6 @@ body {
         grid-column: 3/11;
         grid-row: 3/6;
         row-gap: 10px;
-    }
-
-    ::placeholder {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 60px;
-        letter-spacing: 0.04em;
     }
 
     .contact__img {
@@ -842,29 +712,20 @@ body {
     }
 
     .contact__send {
-        border: 1px solid black;
-        background-color: #333333;
         padding: 20px 39px 10px 39px;
         display: flex;
         flex-direction: column;
         gap: 0;
         margin-left: 0;
-        font-weight: 400;
         font-size: 1.5em;
         line-height: 1em;
         letter-spacing: 0.2em;
-        text-transform: uppercase;
         align-self: center;
         width: 220px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    body {
-        width: 80vw;
-        margin: 0 auto;
-    }
-
     .header {
         font-size: 0.75em;
     }
@@ -943,10 +804,6 @@ body {
         word-spacing: 0.5em;
     }
 
-    a:hover {
-        background-color: #F2F2F2;
-    }
-
     .project-lorum__img {
         position: relative;
     }
@@ -956,11 +813,9 @@ body {
     }
 
     #img-button {
-        position: absolute;
         left: 0;
         top: 0;
         max-width: 30%;
-        margin-left: -1px;
     }
 
     .about {
@@ -973,19 +828,7 @@ body {
     }
 
     .title {
-        font-family: 'Roboto';
-        font-weight: 300;
-        font-size: 5vh;
-        color: #BDBDBD;
-    }
-
-    .about__subtitle {
-        font-family: 'Roboto';
-        font-weight: 300;
-        font-size: 1em;
-        line-height: 1.6em;
-        color: #000000;
-        padding-top: 20px;
+        font-size: 2em;
     }
 
     .about__pictures {
@@ -1011,30 +854,18 @@ body {
     }
 
     .main-focus__number {
-        font-family: 'Roboto';
-        font-weight: 900;
         font-size: 8em;
-        color: #F2F2F2;
         padding-right: 3%;
     }
 
     .main-focus__text {
-        font-family: 'Roboto';
-        font-weight: 400;
         font-size: 0.9em;
         line-height: 2em;
-        color: #333333;
-    }
-
-    .main-focus__item {
-        display: flex;
-        align-items: center;
     }
 
     .main-focus__row {
         display: grid;
-
-        column-gap: 15%;
+        grid-template-columns: 1fr;
     }
 
     .main-focus {
@@ -1069,7 +900,6 @@ body {
         font-size: 1.5em;
         line-height: 2em;
     }
-
 
     .project__img {
         width: 100%;
