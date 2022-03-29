@@ -151,7 +151,6 @@ body {
 
 .project-lorum {
     display: flex;
-    width: 80vw;
 }
 
 .project-lorum__text {
@@ -164,7 +163,7 @@ body {
 .project-lorum__title {
     font-family: 'Roboto';
     font-weight: 300;
-    font-size: 9.6vh;
+    font-size: 4em;
     color: #BDBDBD;
     text-transform: uppercase;
 }
@@ -172,7 +171,7 @@ body {
 .project-lorum__subtitle {
     font-family: 'Roboto';
     font-weight: 700;
-    font-size: 9.6vh;
+    font-size: 4em;
     color: #333333;
 }
 
@@ -235,7 +234,7 @@ a:hover {
 .title {
     font-family: 'Roboto';
     font-weight: 300;
-    font-size: 64px;
+    font-size: 4em;
     color: #BDBDBD;
 }
 
@@ -315,7 +314,7 @@ a:hover {
     background-color: #F3F3F3;
     border: none;
     height: 90%;
-    padding-left: 20px;
+    padding-left: 2%;
 }
 
 .contact {
@@ -323,8 +322,8 @@ a:hover {
     grid-column: 1/12;
     grid-row: 1/4;
     grid-template-columns: repeat(12, 1fr);
-    row-gap: 20px;
-    column-gap: 30px;
+    row-gap: 2rem;
+    column-gap: 2.5rem;
     margin-top: 12%;
 }
 
@@ -336,7 +335,7 @@ a:hover {
     display: grid;
     grid-column: 1/5;
     grid-row: 2/4;
-    row-gap: 10px;
+    row-gap: 0.5rem;
     height: 100%;
 }
 
@@ -344,8 +343,8 @@ a:hover {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 60px;
+    font-size: 0.87em;
+    line-height: 3.75em;
     letter-spacing: 0.04em;
 }
 
@@ -355,23 +354,22 @@ a:hover {
 }
 
 .contact__button {
-    margin-top: 77px;
+    margin-top: 7%;
     display: flex;
 }
 
 .contact__send {
     border: 1px solid black;
     background-color: #333333;
-    padding: 26px 39px;
+    padding: 2% 4%;
     display: flex;
     margin-left: 0;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 0.75em;
+    line-height: 0.75em;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     justify-content: center;
-    width: 180px;
 }
 
 .project {
@@ -544,15 +542,21 @@ a:hover {
         margin-right: 35px;
     }
 
-    .project-lorum {
-        display: flex;
-        width: 90vw;
-        height: 100vh;
+    .project-lorum__text {
+        padding-right: 5%;
+        padding-top: 10%;
     }
 
+    .project-lorum__btn {
+        padding-top: 5%;
+    }
+    
+    .project-lorum__counter {
+        margin-top: 5%;
+    }
 
-    #img-building {
-        max-height: 100%;
+    #img-button {
+        max-width: 50%;
     }
 
     .about {
@@ -585,13 +589,19 @@ a:hover {
         padding-top: 5%;
     }
 
+    .main-focus__number {
+        font-size: 8em;
+        padding-right: 3%;
+    }
+
     .main-focus__text {
-        font-size: 0.9em;
+        font-size: 1.1em;
         line-height: 2em;
     }
 
     .main-focus__row {
-        column-gap: 10%;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     .main-focus {
@@ -682,8 +692,7 @@ a:hover {
         grid-column: 1/12;
         grid-row: 1/6;
         grid-template-columns: repeat(12, 1fr);
-        row-gap: 20px;
-        column-gap: 30px;
+        row-gap: 2rem;
         margin-top: 10%;
     }
 
@@ -693,35 +702,20 @@ a:hover {
 
     .contact__forma {
         display: grid;
-        grid-template-rows: repeat(4, 10vh) 20vh;
-        grid-column: 3/11;
+        grid-template-rows: repeat(4, 5vh) 10vh;
+        grid-column: 2/11;
         grid-row: 3/6;
-        row-gap: 10px;
+        row-gap: 1rem;
     }
 
     .contact__img {
         grid-column: 1/12;
         grid-row: 2/3;
-        width: 80vw;
     }
 
     .contact__button {
-        margin-top: 30px;
-        display: flex;
+        margin-top: 5%;
         justify-content: center;
-    }
-
-    .contact__send {
-        padding: 20px 39px 10px 39px;
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-        margin-left: 0;
-        font-size: 1.5em;
-        line-height: 1em;
-        letter-spacing: 0.2em;
-        align-self: center;
-        width: 220px;
     }
 }
 
@@ -751,7 +745,7 @@ a:hover {
         grid-template-areas:
             "title subtitle"
             "counter btn";
-        justify-content: start;
+        justify-content: center;
         align-items: baseline;
         column-gap: 1%;
         padding-top: 5%;
@@ -762,60 +756,30 @@ a:hover {
         grid-area: title;
         font-family: 'Roboto';
         font-weight: 300;
-        font-size: 5vh;
-        color: #BDBDBD;
-        text-transform: uppercase;
+        font-size: 2.2em;
     }
 
     .project-lorum__subtitle {
         grid-area: subtitle;
         font-family: 'Roboto';
         font-weight: 700;
-        font-size: 5vh;
+        font-size: 2.2em;
         color: #333333;
     }
 
     .project-lorum__btn {
         grid-area: btn;
-        display: flex;
         padding-top: 5%;
     }
 
-    .project-lorum__btn-item {
-        border: 1px solid #F9F9F9;
-        font-size: 1em;
-        height: 2em;
-        width: 2em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        margin-right: 5%;
-        color: #000000;
-    }
-
     .project-lorum__counter {
-        grid-area: counter;
-        font-family: 'Roboto';
-        font-weight: 400;
         font-size: 1em;
         line-height: 1.5em;
-        color: #BDBDBD;
-        word-spacing: 0.5em;
-    }
-
-    .project-lorum__img {
-        position: relative;
-    }
-
-    #img-building {
-        width: 100%;
+        padding-left: 5%;
     }
 
     #img-button {
-        left: 0;
-        top: 0;
-        max-width: 30%;
+        max-width: 40%;
     }
 
     .about {
@@ -942,19 +906,10 @@ a:hover {
 
     .contact__forma {
         display: grid;
-        grid-template-rows: repeat(4, 10vh) 20vh;
-        grid-column: 3/11;
+        grid-template-rows: repeat(4, 5vh) 10vh;
+        grid-column: 1/12;
         grid-row: 3/6;
-        row-gap: 10px;
-    }
-
-    ::placeholder {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 60px;
-        letter-spacing: 0.04em;
+        row-gap: 1rem;
     }
 
     .contact__img {
@@ -963,24 +918,12 @@ a:hover {
     }
 
     .contact__button {
-        margin-top: 30px;
+        margin-top: 7%;
         display: flex;
         justify-content: center;
     }
-
+    
     .contact__send {
-        border: 1px solid black;
-        background-color: #333333;
-        padding: 20px 39px 10px 39px;
-        display: flex;
-        gap: 0;
-        margin-left: 0;
-        font-weight: 400;
-        font-size: 0.8em;
-        line-height: 1em;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        align-self: center;
-        justify-content: center;
+        padding: 2% 4%;
     }
 }
