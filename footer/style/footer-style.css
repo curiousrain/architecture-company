@@ -14,7 +14,6 @@
     margin-bottom: 1.5em;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
-    font-weight: 700;
 }
 
 .footer__text {
@@ -71,8 +70,8 @@
 @media screen and (min-width:1024px) {
     .footer__section {
         font-weight: 500;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 1em;
+        line-height: 1.5em;
     }
 
     .footer__nav {
