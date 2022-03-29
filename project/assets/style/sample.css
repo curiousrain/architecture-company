@@ -24,12 +24,16 @@
     color: #333333;
 }
 
+.project__img {
+    width: 100%;
+    height: 100%;
+}
+
 .project-sample {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(12, auto);
     row-gap: 1.1rem;
-    column-gap: 1.1rem;
 }
 
 .project-sample__header {
@@ -41,11 +45,11 @@
 }
 
 .project-sample__middle-pict {
-    grid-column: 1/4;
+    grid-column: 1/5;
 }
 
 .project-sample__middle-text {
-    grid-column: 4/12;
+    grid-column: 5/12;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
@@ -53,6 +57,7 @@
     line-height: 1.6em;
     color: #000000;
     text-align: justify;
+    padding-left: 3%;
 }
 
 .project-sample__pict-down {
