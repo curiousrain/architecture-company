@@ -193,6 +193,10 @@ body {
     color: #000000;
 }
 
+.project-lorum__btn-item:hover {
+    background-color: #F9F9F9;
+}
+
 .project-lorum__counter {
     font-family: 'Roboto';
     font-weight: 400;
@@ -203,16 +207,8 @@ body {
     word-spacing: 1em;
 }
 
-a:hover {
-    background-color: #F2F2F2;
-}
-
 .project-lorum__img {
     position: relative;
-}
-
-#img-building {
-    max-height: 100%;
 }
 
 #img-button {
@@ -307,7 +303,7 @@ a:hover {
 
 .main-focus {
     margin-top: 11%;
-    margin-bottom: 12%;
+    margin-bottom: 8%;
 }
 
 .contact__foma-text {
