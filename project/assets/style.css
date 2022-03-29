@@ -317,6 +317,15 @@ a:hover {
     padding-left: 2%;
 }
 
+::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.87em;
+    line-height: 3.75em;
+    letter-spacing: 0.04em;
+}
+
 .contact {
     display: grid;
     grid-column: 1/12;
@@ -339,22 +348,13 @@ a:hover {
     height: 100%;
 }
 
-::placeholder {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.87em;
-    line-height: 3.75em;
-    letter-spacing: 0.04em;
-}
-
 .contact__img {
     grid-column: 5/12;
     grid-row: 2/4;
 }
 
 .contact__button {
-    margin-top: 7%;
+    margin-top: 5%;
     display: flex;
 }
 
