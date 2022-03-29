@@ -52,6 +52,7 @@
     font-size: 1em;
     line-height: 1.6em;
     color: #000000;
+    text-align: justify;
 }
 
 .project-sample__pict-down {
@@ -237,6 +238,11 @@
 }
 
 @media screen and (max-width: 767px) {
+
+    .project-sample {
+        row-gap: 0.5rem;
+        column-gap: 0;
+    }
 
     .project-sample__title {
         font-size: 2em;
