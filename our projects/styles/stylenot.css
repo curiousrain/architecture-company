@@ -104,8 +104,6 @@
 }
 
 .project__second {
-    grid-column: 11/13;
-    grid-row: 4/5;
     border: 1px solid black;
     background-color: #333333;
     padding: 24px 39px;
