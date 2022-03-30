@@ -1,6 +1,6 @@
 .body__container {
     width: 80vw;
-    margin: 0 auto;
+    margin: 0 auto 12% auto;
 }
 
 .certifications__header {
@@ -22,6 +22,10 @@
     font-weight: 700;
     font-size: 4em;
     color: #333333;
+}
+
+.color-text-carousel {
+    color: #2C2C2C;
 }
 
 .footer__container {
