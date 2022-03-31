@@ -221,6 +221,12 @@
     letter-spacing: 0.2em;
     text-transform: uppercase;
     justify-content: center;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.main {
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
 }
 
 .project {
@@ -296,7 +302,7 @@
     content: '';
     width: 24px;
     height: 24px;
-    background: url(../img/our-projects/arrow-2-right-long.svg) no-repeat;
+    background: url('../img/our-projects/arrow-2-right-long.svg') no-repeat;
 }
 
 .project__next {
@@ -324,8 +330,6 @@
 }
 
 .project__second {
-    grid-column: 11/13;
-    grid-row: 4/5;
     border: 1px solid black;
     background-color: #333333;
     padding: 24px 39px;
@@ -411,6 +415,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+
+    .main {
+        max-width: 1170px;
+    }
 
     .footer__section {
         font-weight: 500;
@@ -808,6 +816,7 @@
         font-size: 1.5em;
         line-height: 2em;
     }
+
 
     .project__img {
         width: 100%;
