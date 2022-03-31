@@ -683,7 +683,7 @@ body {
         row-gap: 1rem;
     }
 
-    #img {
+    .about__pict {
         width: 90%;
     }
 
@@ -1043,7 +1043,7 @@ body {
         grid-row: 3/4;
     }
 
-    #img {
+    .about__pict {
         width: 90%;
     }
 
@@ -1057,7 +1057,7 @@ body {
         padding-bottom: 5%;
     }
 
-    #about__btn_width {
+    .about__btn_width {
         width: 50%;
     }
 
