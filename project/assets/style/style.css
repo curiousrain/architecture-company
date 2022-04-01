@@ -360,6 +360,10 @@ body {
     background: url('../img/our-projects/arrow-2-right-long.svg') no-repeat;
 }
 
+.project__img {
+    max-width: 100%;
+}
+
 .project__next {
     grid-column: 7/13;
     grid-row: 2/3;
@@ -371,7 +375,7 @@ body {
 }
 
 .project__middle {
-    grid-column: 4/8;
+    grid-column: 4/9;
     grid-row: 3/4;
 }
 
@@ -658,7 +662,7 @@ body {
     .project-lorum__btn {
         padding-top: 5%;
     }
-    
+
     .project-lorum__counter {
         margin-top: 5%;
     }
@@ -1168,7 +1172,7 @@ body {
         display: flex;
         justify-content: center;
     }
-    
+
     .contact__send {
         padding: 2% 4%;
     }
