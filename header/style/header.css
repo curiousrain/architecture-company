@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #E5E5E5;
+    background-color: #fff;
 }
 
 .menu__item li a:hover {
@@ -37,8 +37,8 @@ body {
 .hamburger-line::before,
 .hamburger-line::after {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 1.3em;
+    height: 0.07em;
     content: '';
     position: absolute;
     transition: all .3s;
@@ -50,7 +50,7 @@ body {
 }
 
 .hamburger-line::after {
-    top: -0.32em;
+    top: -0.30em;
 }
 
 /* media query for desktop */
@@ -135,7 +135,7 @@ body {
 
 @media screen and (min-width:768px) and (max-width:1023px) {
     .header {
-        font-size: 0.875em;
+        font-size: 0.80em;
     }
 
     .header__container {
@@ -150,8 +150,8 @@ body {
     }
 
     .header__container_logo {
-        width: 90px;
-        height: 63.71px;
+        width: 80px;
+        height: 53.71px;
         margin-bottom: 1.5em;
     }
 
@@ -209,7 +209,7 @@ body {
 
 @media screen and (max-width:767px) {
     .header {
-        font-size: 0.875em;
+        font-size: 0.80em;
     }
 
     .header__container {
@@ -222,9 +222,8 @@ body {
     }
 
     .header__container_logo {
-        width: 90px;
-        height: 63.71px;
-        /* margin-bottom: 1.5em; */
+        width: 80px;
+        height: 53.71px;
     }
 
     .header__menu {
@@ -239,7 +238,8 @@ body {
         letter-spacing: 0.2em;
         max-height: 0;
         overflow: hidden;
-        background-color: #E5E5E5;
+        background: transparent;
+        z-index: 100;
     }
 
     #checkbox__toggle:checked~.menu__item {
