@@ -1,11 +1,13 @@
+.footer {
+    background-color: #2C2C2C;
+}
+
 .footer__container {
     display: grid;
     grid-column: 1/4;
     grid-row: 1/6;
     grid-template-columns: repeat(4, 1fr);
-    background-color: #2C2C2C;
     color: white;
-    padding: 58px 212px 60px 116px;
 }
 
 .footer__h2 {
@@ -68,6 +70,12 @@
 }
 
 @media screen and (min-width:1024px) {
+    .footer__container {
+        padding: 58px 50px 60px;
+        max-width: 1070px;
+        margin: auto;
+    }
+
     .footer__section {
         font-weight: 500;
         font-size: 1em;
