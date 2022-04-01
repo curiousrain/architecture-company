@@ -49,7 +49,7 @@ body {
 }
 
 .hamburger-line::after {
-    top: -0.32em;
+    top: -0.30em;
 }
 
 .body__container {
