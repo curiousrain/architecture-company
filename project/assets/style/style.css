@@ -117,6 +117,8 @@ body {
 
 .project-lorum__img {
     position: relative;
+    width: 770px;
+    height: 829px;
 }
 
 #img-button {
