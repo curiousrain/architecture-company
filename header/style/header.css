@@ -230,6 +230,7 @@ body {
         display: block;
         align-items: center;
         text-align: center;
+        z-index: 950;
     }
 
     .menu__item {
@@ -239,7 +240,6 @@ body {
         max-height: 0;
         overflow: hidden;
         background: transparent;
-        z-index: 100;
     }
 
     #checkbox__toggle:checked~.menu__item {
