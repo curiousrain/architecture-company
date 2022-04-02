@@ -414,6 +414,9 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .project-lorum {
+        margin-top: 5%;
+    }
     .project-lorum__text {
         padding-right: 5%;
         padding-top: 10%;
