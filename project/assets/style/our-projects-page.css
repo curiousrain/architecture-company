@@ -131,13 +131,16 @@
 
     .main__article {
         display: grid;
-        grid-template-columns: 670px 1fr;
+        grid-template-columns: auto 1fr;
         grid-template-rows: 1fr;
     }
 
     .main__image {
         grid-column: 1/2;
         grid-row: 1/2;
+        max-width: 60vw;
+        height: 100%;
+        object-fit: cover;
     }
 
     .main__h2 {
@@ -180,6 +183,7 @@
     .main__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
     }
 
     .main__article:last-child:nth-child(2n - 1) {
