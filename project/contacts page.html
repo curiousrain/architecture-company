@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/normalize.css">
+    <link rel="stylesheet" href="assets/style/contacts-style.css">
+    <link rel="stylesheet" href="assets/style/footer-style.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="main__container">
+            <h1 class="main__h1">Contact <br> <span class="main__bold main__second">Information</span></h1>
+            <div class="main__adress">
+                <span class="main__bold main__size">Company Name</span>
+                <br>
+                <span class="main__thin">1234 Sample Street Austin Texas 76401</span>
+            </div>
+            <div class="main__bold main__size main__phone main__next">
+                512.333.2222
+            </div>
+            <div class="main__mail">
+                <a href="mailto:sampleemail@gmail.com" class="main__link  main__thin main__next">sampleemail@gmail.com</a>
+            </div>
+            <a href="#" class="main__contact main__link">Contact US</a>
+        </div>
+        <div id="map" class="main__map"> </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <img src="assets/img/footer-pics/big-logo.svg" alt="logo" class="footer__logo">
+            <nav class="footer__section footer__nav">
+                <h2 class="footer__h2">Information</h2>
+                <p class="footer__text"><a href="./index.html" class="footer__link">Main</a></p>
+                <p class="footer__text"><a href="./gallery.html" class="footer__link">Gallery</a></p>
+                <p class="footer__text"><a href="./our-projects-page.html" class="footer__link">Projects</a></p>
+                <p class="footer__text"><a href="./certifications.html" class="footer__link">Certifications</a></p>
+                <p class="footer__text"><a href="./contacts page.html" class="footer__link">Contacts</a></p>
+            </nav>
+            <div class="footer__section footer__contacts">
+                <h2 class="footer__h2">Contacts</h2>
+                <div class="footer__info footer__adress">
+                    <img src="assets/img/footer-pics/location.svg" alt="location" class="contacts__icon">
+                    <address class="contacts__text">
+                        1234 Sample Street Austin Texas 78704
+                    </address>
+                </div>
+                <div class="footer__info">
+                    <img src="assets/img/footer-pics/phone.svg" alt="phone" class="contacts__icon">
+                    <p class="contacts__text">
+                        <a href="tel:512.333.2222" class="footer__link">512.333.2222</a>
+                    </p>
+                </div>
+                <div class="footer__info">
+                    <img src="assets/img/footer-pics/mail.svg" alt="mail" class="contacts__icon">
+                    <p class="contacts__text">
+                        <a href="mailto:sampleemail@gmail.com" class="footer__link">sampleemail@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer__section footer__social">
+                <h2 class="footer__h2">Social media</h2>
+                <div class="social__links">
+                    <a href="https://ru-ru.facebook.com/" target="blank">
+                        <img src="assets/img/footer-pics/facebook.svg" alt="facebook" class="social__img">
+                    </a>
+                    <a href="https://twitter.com/" target="blank">
+                        <img src="assets/img/footer-pics/twitter.svg" alt="twitter" class="social__img">
+                    </a>
+                    <a href="https://ru.linkedin.com/" target="blank">
+                        <img src="assets/img/footer-pics/linked-in.svg" alt="linked in" class="social__img">
+                    </a>
+                    <a href="https://www.pinterest.ru/" target="blank">
+                        <img src="assets/img/footer-pics/pinterest.svg" alt="pinterest" class="social__img">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__rights">
+            &copy; 2021 All Rights Reserved
+        </div>
+    </footer>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAOh9v7EkuPbFP6IMK7SuykGOuUVVQrRA&callback=initMap&v=weekly"
+        async>
+    </script>
+    <script src="assets/js/map.js"></script>
+</body>
+
+</html>
