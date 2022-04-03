@@ -4,81 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>CERTIFICATIONS</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style/normalize.css">
-    <link rel="stylesheet" href="assets/style/header.css">
-    <link rel="stylesheet" href="assets/style/certifications.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="assets/style/gallery-style.css">
     <link rel="stylesheet" href="assets/style/footer-style.css">
-    <link rel="apple-touch-icon" type="image/png" sizes="180x180"
-        href="assets/images/header-logos/favicon_package_v0.16/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="assets/images/header-logos/favicon_package_v0.16/favicon-32x32.png">
-    <link rel="smaller-icon" type="image/png" sizes="16x16"
-        href="assets/images/header-logos/favicon_package_v0.16/favicon-16x16.png">
-    <link rel="manifest" href="assets/images/header-logos/favicon_package_v0.16/site.webmanifest">
-    <link rel="mask-icon" href="assets/images/header-logos/favicon_package_v0.16/safari-pinned-tab.svg" color="#333333">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@500;700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/header.css">
 </head>
 
 <body>
-    <div class="body__container">
-        <header class="header">
-            <div class="header__container">
-                <img class="header__container_logo" src="assets/img/logo.svg" alt="Logotype" />
-                <nav class="header__menu">
-                    <input id="checkbox__toggle" type="checkbox" />
-                    <label class="hamburger" for="checkbox__toggle"><span class="hamburger-line"></span></label>
-                    <ul class="menu__item">
-                        <li><a href="./index.html" class="menu__item_main">Main</a></li>
-                        <li><a href="./gallery.html" class="menu__item_gallery">Gallery</a></li>
-                        <li><a href="./our-projects-page.html" class="menu__item_projects">Projects</a></li>
-                        <li><a href="./certifications.html" class="menu__item_certifications">Certifications</a></li>
-                        <li><a href="./contacts page.html" class="menu__item_contacts">Contacts</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <div class="certifications">
-            <div class="certifications__header">
-                <div class="certifications__title">Company</div>
-                <div class="certifications__subtitle">Certifications</div>
-            </div>
-            <div class="certifications__pict">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="assets/img/certifications/certificat.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/img/certifications/certificat2.jpg" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </a>
-                </div>
+    <header class="header">
+        <div class="header__container">
+            <img class="header__container_logo" src="assets/img/logo.svg" alt="Logotype" />
+            <nav class="header__menu">
+                <input id="checkbox__toggle" type="checkbox" />
+                <label class="hamburger" for="checkbox__toggle"><span class="hamburger-line"></span></label>
+                <ul class="menu__item">
+                    <li><a href="./index.html" class="menu__item_main">Main</a></li>
+                    <li><a href="./gallery.html" class="menu__item_gallery">Gallery</a></li>
+                    <li><a href="./our-projects-page.html" class="menu__item_projects">Projects</a></li>
+                    <li><a href="./certifications.html" class="menu__item_certifications">Certifications</a></li>
+                    <li><a href="./contacts page.html" class="menu__item_contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <h1 class="main__h1">Company <br> <span class="main__gal">Certifications</span></h1>
+        <hr class="main__hr">
+        <div class="main__pics_desktop">
+            <img src="assets/img/certifications/certificat.jpg" alt="" class="main__pic">
+            <img src="assets/img/certifications/certificat2.jpg" alt="" class="main__pic">
+        </div>
+        <div class="main__pics_adaptive">
+            <div class="main-carousel" data-flickity='{ "groupCells": true, "wrapAround": true }'>
+                <img src="assets/img/certifications/certificat.jpg" alt="" class="main__pic">
+                <img src="assets/img/certifications/certificat2.jpg" alt="" class="main__pic">
             </div>
         </div>
-    </div>
+    </main>
     <footer class="footer">
-        <div class="footer__container">
+        <div class="container footer__container">
             <img src="assets/img/footer-pics/big-logo.svg" alt="logo" class="footer__logo">
             <nav class="footer__section footer__nav">
                 <h2 class="footer__h2">Information</h2>
@@ -131,13 +99,7 @@
             &copy; 2021 All Rights Reserved
         </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-    </script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
