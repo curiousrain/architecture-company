@@ -11,12 +11,11 @@
     <link rel="stylesheet" href="assets/style/contacts-style.css">
     <link rel="stylesheet" href="assets/style/footer-style.css">
     <link rel="stylesheet" href="assets/style/header.css">
-    <link rel="apple-touch-icon" type="image/png" sizes="180x180"
-        href="assets/img/header-logos/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="assets/img/header-logos/favicon-32x32.png">
-    <link rel="smaller-icon" type="image/png" sizes="16x16"
-        href="assets/img/header-logos/favicon-16x16.png">
+    <link rel="stylesheet" href="assets/style/ask.css">
+    <link rel="stylesheet" href="./assets/style/success.css">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/header-logos/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/header-logos/favicon-32x32.png">
+    <link rel="smaller-icon" type="image/png" sizes="16x16" href="assets/img/header-logos/favicon-16x16.png">
     <link rel="manifest" href="assets/img/header-logos/site.webmanifest">
     <link rel="mask-icon" href="assets/img/header-logos/safari-pinned-tab.svg" color="#333333">
 </head>
@@ -50,14 +49,15 @@
                 512.333.2222
             </div>
             <div class="main__mail">
-                <a href="mailto:sampleemail@gmail.com" class="main__link  main__thin main__next">sampleemail@gmail.com</a>
+                <a href="mailto:sampleemail@gmail.com"
+                    class="main__link  main__thin main__next">sampleemail@gmail.com</a>
             </div>
-            <a href="#" class="main__contact main__link">Contact US</a>
+            <a href="#" id="button-form" class="main__contact main__link">Contact US</a>
         </div>
         <div id="map" class="main__map"> </div>
     </main>
     <footer class="footer">
-        <div class="container footer__container">
+        <div class="footer__container">
             <img src="assets/img/footer-pics/big-logo.svg" alt="logo" class="footer__logo">
             <nav class="footer__section footer__nav">
                 <h2 class="footer__h2">Information</h2>
@@ -110,11 +110,49 @@
             &copy; 2021 All Rights Reserved
         </div>
     </footer>
+    <div id="modal-success" class="modal">
+        <div class="forma-sent">
+            <div class="forma-sent__header">
+                <span class="box__close" id="close-success">&times;</span>
+            </div>
+            <div class="forma-sent__check">
+                <img src="./assets/img/success/success.svg" alt="Готово" class="forma-sent__check-succes">
+            </div>
+            <div class="forma-sent__thanks">Спасибо !</div>
+            <div class="forma-sent__message">Ваше сообщение отправлено. <br> Мы свяжемся с вами в ближайшее время.</div>
+            <div class="forma-sent__back-button"> <a href="./contacts page.html">ВЕРНУТЬСЯ НАЗАД</a></div>
+        </div>
+    </div>
+    <div id="modal-form" class="modal">
+        <div class="modal-content">
+            <div class="box__form">
+                <div class="box__title">
+                    <h1 class="box__ask">Задать вопрос</h1>
+                    <span class="box__close" id="close-form">&times;</span>
+                </div>
+                <form class="box__question" id="box-question">
+                    <input type="text" placeholder="Имя" class="box__field">
+                    <input type="tel" required placeholder="Номер телефона*" class="box__field">
+                    <input type="email" required placeholder="E-mail*" class="box__field">
+                    <input type="text" placeholder="Интересующий товар/услуга" class="box__field">
+                    <textarea required placeholder="Сообщение*" class="box__field"></textarea>
+                    <div class="box__agreement">
+                        <input type="checkbox" checked="checked" class="box__check">
+                        <p class="box__request">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
+                        </p>
+                    </div>
+                    <input type="submit" class="box__send" id="button-send" value="Отправить">
+                </form>
+            </div>
+        </div>
+    </div>
+
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAOh9v7EkuPbFP6IMK7SuykGOuUVVQrRA&callback=initMap&v=weekly"
         async>
     </script>
     <script src="assets/js/map.js"></script>
+    <script src="./assets/js/pop-up.js"></script>
 </body>
 
 </html>
