@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./ask-style/normalize.css">
+    <link rel="stylesheet" href="./assets/style/ask.css">
+</head>
+
+<body>
+    <main class="box">
+        <div class="box__form">
+            <div class="box__title">
+                <h1 class="box__ask">Задать вопрос</h1>
+                <a href="#" class="box__close"></a>
+            </div>
+            <form class="box__question">
+                <input type="text" placeholder="Имя" class="box__field">
+                <input type="tel" required placeholder="Номер телефона*" class="box__field">
+                <input type="email" required placeholder="E-mail*" class="box__field">
+                <input type="text" placeholder="Интересующий товар/услуга" class="box__field">
+                <textarea required placeholder="Сообщение*" class="box__field"></textarea>
+                <div class="box__agreement">
+                    <input type="checkbox" checked="checked"  class="box__check">
+                    <p class="box__request">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
+                </div>
+                <input type="submit" class="box__send" value="Отправить">
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
