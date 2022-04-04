@@ -10,12 +10,11 @@
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="assets/style/header.css">
     <link rel="stylesheet" href="assets/style/footer-style.css">
-    <link rel="apple-touch-icon" type="image/png" sizes="180x180"
-        href="assets/img/header-logos/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="assets/img/header-logos/favicon-32x32.png">
-    <link rel="smaller-icon" type="image/png" sizes="16x16"
-        href="assets/img/header-logos/favicon-16x16.png">
+    <link rel="stylesheet" href="assets/style/success.css">
+    <link rel="stylesheet" href="assets/style/ask.css">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/header-logos/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/header-logos/favicon-32x32.png">
+    <link rel="smaller-icon" type="image/png" sizes="16x16" href="assets/img/header-logos/favicon-16x16.png">
     <link rel="manifest" href="assets/img/header-logos/site.webmanifest">
     <link rel="mask-icon" href="assets/img/header-logos/safari-pinned-tab.svg" color="#333333">
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -73,9 +72,12 @@
         </div>
         <div class="about">
             <div class="about__pictures">
-                <div class="about__pict-1"><img class="about__pict" src="assets/img/about/project1.svg" alt="Проект1"></div>
-                <div class="about__pict-2"><img class="about__pict" src="assets/img/about/project2.svg" alt="Проект2"></div>
-                <div class="about__pict-3"><img class="about__pict" src="assets/img/about/project3.svg" alt="Проект3"></div>
+                <div class="about__pict-1"><img class="about__pict" src="assets/img/about/project1.svg" alt="Проект1">
+                </div>
+                <div class="about__pict-2"><img class="about__pict" src="assets/img/about/project2.svg" alt="Проект2">
+                </div>
+                <div class="about__pict-3"><img class="about__pict" src="assets/img/about/project3.svg" alt="Проект3">
+                </div>
             </div>
             <div class="about__text">
                 <div class="about__title title">About</div>
@@ -104,7 +106,8 @@
                 <div class="main-focus__item">
                     <div class="main-focus__number">2</div>
                     <div class="main-focus__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                        efficitur, lectus et facilisis placerat, magna mauris porttitor tortor, a auctor est felis ut nisl.
+                        efficitur, lectus et facilisis placerat, magna mauris porttitor tortor, a auctor est felis ut
+                        nisl.
                     </div>
                 </div>
             </div>
@@ -145,7 +148,7 @@
             </div>
         </div>
         <div class="contact__button">
-            <a href="mailto:sampleemail@gmail.com" class="contact__send project__button-general">
+            <a href="#" id="button-form" class="contact__send project__button-general">
                 Send Email
             </a>
         </div>
@@ -204,6 +207,19 @@
             &copy; 2021 All Rights Reserved
         </div>
     </footer>
+    <div id="modal-success" class="modal">
+        <div class="forma-sent">
+            <div class="forma-sent__header">
+                <span class="box__close" id="close-success">&times;</span>
+            </div>
+            <div class="forma-sent__check">
+                <img src="./assets/img/success/success.svg" alt="Готово" class="forma-sent__check-succes">
+            </div>
+            <div class="forma-sent__thanks">Спасибо !</div>
+            <div class="forma-sent__message">Ваше сообщение отправлено. <br> Мы свяжемся с вами в ближайшее время.</div>
+            <div class="forma-sent__back-button"> <a href="./contacts-page.html">ВЕРНУТЬСЯ НАЗАД</a></div>
+        </div>
+        <script src="assets/js/pop-up-index.js"></script>
 </body>
 
 </html>
