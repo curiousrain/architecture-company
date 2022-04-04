@@ -18,11 +18,11 @@ closeForm.onclick = function() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modalForm) {
-    modalForm.style.display = "none";
-  }
-}
+// window.onclick = function(event) {
+//   if (event.target == modalForm) {
+//     modalForm.style.display = "none";
+//   }
+// }
 
 // Get the modal
 var modalSuccess = document.getElementById("modal-success");
@@ -45,8 +45,8 @@ closeSuccess.onclick = function() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modalSuccess) {
-    modalSuccess.style.display = "none";
-  }
-}
+// window.onclick = function(event) {
+//   if (event.target == modalSuccess) {
+//     modalSuccess.style.display = "none";
+//   }
+// }

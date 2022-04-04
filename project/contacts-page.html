@@ -5,19 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Contacts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style/normalize.css">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="assets/style/gallery-style.css">
+    <link rel="stylesheet" href="assets/style/contacts-style.css">
     <link rel="stylesheet" href="assets/style/footer-style.css">
     <link rel="stylesheet" href="assets/style/header.css">
-    <link rel="apple-touch-icon" type="image/png" sizes="180x180"
-        href="assets/img/header-logos/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="assets/img/header-logos/favicon-32x32.png">
-    <link rel="smaller-icon" type="image/png" sizes="16x16"
-        href="assets/img/header-logos/favicon-16x16.png">
+    <link rel="stylesheet" href="assets/style/ask.css">
+    <link rel="stylesheet" href="assets/style/success.css">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/header-logos/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/header-logos/favicon-32x32.png">
+    <link rel="smaller-icon" type="image/png" sizes="16x16" href="assets/img/header-logos/favicon-16x16.png">
     <link rel="manifest" href="assets/img/header-logos/site.webmanifest">
     <link rel="mask-icon" href="assets/img/header-logos/safari-pinned-tab.svg" color="#333333">
 </head>
@@ -36,52 +34,32 @@
                     <li><a href="./gallery.html" class="menu__item_gallery">Gallery</a></li>
                     <li><a href="./our-projects-page.html" class="menu__item_projects">Projects</a></li>
                     <li><a href="./certifications.html" class="menu__item_certifications">Certifications</a></li>
-                    <li><a href="./contacts page.html" class="menu__item_contacts">Contacts</a></li>
+                    <li><a href="./contacts-page.html" class="menu__item_contacts">Contacts</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main class="main">
-        <h1 class="main__h1">Photo <br> <span class="main__gal">Gallery</span></h1>
-        <hr class="main__hr">
-        <div class="main__pics_desktop">
-            <img src="assets/img/gallery-pics/building-1.jpg" alt="" class="main__pic">
-            <img src="assets/img/gallery-pics/building-2.jpg" alt="" class="main__pic">
-            <img src="assets/img/gallery-pics/building-3.jpg" alt="" class="main__pic">
-            <img src="assets/img/gallery-pics/building-4.jpg" alt="" class="main__pic">
-            <img src="assets/img/gallery-pics/building-5.jpg" alt="" class="main__pic">
-            <img src="assets/img/gallery-pics/building-6.jpg" alt="" class="main__pic">
-            <img src="assets/img/gallery-pics/building-7.jpg" alt="" class="main__pic">
-            <img src="assets/img/gallery-pics/building-8.jpg" alt="" class="main__pic">
-            <img src="assets/img/gallery-pics/building-9.jpg" alt="" class="main__pic">
-            <img src="assets/img/gallery-pics/building-10.jpg" alt="" class="main__pic">
-        </div>
-        <div class="main__pics_adaptive">
-            <div class="main-carousel" data-flickity='{ "groupCells": true, "wrapAround": true }'>
-                <img src="assets/img/gallery-pics/building-1.jpg" alt="" class="main__pic">
-                <img src="assets/img/gallery-pics/building-2.jpg" alt="" class="main__pic">
-                <img src="assets/img/gallery-pics/building-3.jpg" alt="" class="main__pic">
-                <img src="assets/img/gallery-pics/building-4.jpg" alt="" class="main__pic">
-                <img src="assets/img/gallery-pics/building-5.jpg" alt="" class="main__pic">
-                <img src="assets/img/gallery-pics/building-6.jpg" alt="" class="main__pic">
-                <img src="assets/img/gallery-pics/building-7.jpg" alt="" class="main__pic">
-                <img src="assets/img/gallery-pics/building-8.jpg" alt="" class="main__pic">
-                <img src="assets/img/gallery-pics/building-9.jpg" alt="" class="main__pic">
-                <img src="assets/img/gallery-pics/building-10.jpg" alt="" class="main__pic">
+        <div class="main__container">
+            <h1 class="main__h1">Contact <br> <span class="main__bold main__second">Information</span></h1>
+            <div class="main__adress">
+                <span class="main__bold main__size">Company Name</span>
+                <br>
+                <span class="main__thin">1234 Sample Street Austin Texas 76401</span>
             </div>
-        </div>
-        <div class="main__under">
-            <div class="main__numbers">
-                <span class="main__number-left">01</span> <span class="main__number-right">/ 05</span>
+            <div class="main__bold main__size main__phone main__next">
+                512.333.2222
             </div>
-            <div class="main__arrows">
-                <a href="#" class="arrow arrow-left"><img src="assets/img/gallery-pics/black-arrow.svg" alt=""></a>
-                <a href="#" class="arrow arrow-right"><img src="assets/img/gallery-pics/black-arrow.svg" alt=""></a>
+            <div class="main__mail">
+                <a href="mailto:sampleemail@gmail.com"
+                    class="main__link  main__thin main__next">sampleemail@gmail.com</a>
             </div>
+            <a href="#" id="button-form" class="main__contact main__link">Contact US</a>
         </div>
+        <div id="map" class="main__map"> </div>
     </main>
     <footer class="footer">
-        <div class="container footer__container">
+        <div class="footer__container">
             <img src="assets/img/footer-pics/big-logo.svg" alt="logo" class="footer__logo">
             <nav class="footer__section footer__nav">
                 <h2 class="footer__h2">Information</h2>
@@ -89,7 +67,7 @@
                 <p class="footer__text"><a href="./gallery.html" class="footer__link">Gallery</a></p>
                 <p class="footer__text"><a href="./our-projects-page.html" class="footer__link">Projects</a></p>
                 <p class="footer__text"><a href="./certifications.html" class="footer__link">Certifications</a></p>
-                <p class="footer__text"><a href="./contacts page.html" class="footer__link">Contacts</a></p>
+                <p class="footer__text"><a href="./contacts-page.html" class="footer__link">Contacts</a></p>
             </nav>
             <div class="footer__section footer__contacts">
                 <h2 class="footer__h2">Contacts</h2>
@@ -134,7 +112,49 @@
             &copy; 2021 All Rights Reserved
         </div>
     </footer>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <div id="modal-success" class="modal">
+        <div class="forma-sent">
+            <div class="forma-sent__header">
+                <span class="box__close" id="close-success">&times;</span>
+            </div>
+            <div class="forma-sent__check">
+                <img src="./assets/img/success/success.svg" alt="Готово" class="forma-sent__check-succes">
+            </div>
+            <div class="forma-sent__thanks">Спасибо !</div>
+            <div class="forma-sent__message">Ваше сообщение отправлено. <br> Мы свяжемся с вами в ближайшее время.</div>
+            <div class="forma-sent__back-button"> <a href="./contacts-page.html">ВЕРНУТЬСЯ НАЗАД</a></div>
+        </div>
+    </div>
+    <div id="modal-form" class="modal">
+        <div class="modal-content">
+            <div class="box__form">
+                <div class="box__title">
+                    <h1 class="box__ask">Задать вопрос</h1>
+                    <span class="box__close" id="close-form">&times;</span>
+                </div>
+                <form class="box__question" id="box-question">
+                    <input type="text" placeholder="Имя" class="box__field">
+                    <input type="tel" required placeholder="Номер телефона*" class="box__field">
+                    <input type="email" required placeholder="E-mail*" class="box__field">
+                    <input type="text" placeholder="Интересующий товар/услуга" class="box__field">
+                    <textarea required placeholder="Сообщение*" class="box__field"></textarea>
+                    <div class="box__agreement">
+                        <input type="checkbox" checked="checked" class="box__check">
+                        <p class="box__request">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
+                        </p>
+                    </div>
+                    <input type="submit" class="box__send" id="button-send" value="Отправить">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAOh9v7EkuPbFP6IMK7SuykGOuUVVQrRA&callback=initMap&v=weekly"
+        async>
+    </script>
+    <script src="assets/js/map.js"></script>
+    <script src="./assets/js/pop-up.js"></script>
 </body>
 
 </html>
