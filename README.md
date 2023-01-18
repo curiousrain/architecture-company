@@ -1,5 +1,7 @@
 # 7stream_html_project1_team1
 Проект веб-сайта архитектурной компании  
+
+https://curiousrain.github.io/architecture-company/project/index.html
   
 - Видео сайта для разрешений под мониторы:  
    
